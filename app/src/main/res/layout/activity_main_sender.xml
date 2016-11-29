@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/stringtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="74dp"
+        android:layout_centerHorizontal="true">
+
+
+        <RadioButton
+            android:id="@+id/bstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary String"
+            android:textColor="#0078ff"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/tstrng"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="Text String"
+            android:checked="true"
+            android:textColor="#0078ff"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="150px"
+        android:ems="10"
+        android:id="@+id/String"
+        android:hint="Type Here"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/stringtype"
+        android:layout_alignEnd="@+id/stringtype"
+        android:layout_alignStart="@+id/stringtype"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textColor="?attr/textColorSearchUrl"
+        android:textAlignment="center"
+        android:cursorVisible="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="SENDER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proximitytextView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"
+            android:background="?attr/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textColorHighlight="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBlinklight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:minHeight="80dip"
+        android:minWidth="150dip"
+        android:textColor="#006400"
+        android:textSize="30sp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/String"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="LIGHT COMMUNICATOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proximitytextView1"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:background="?attr/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
