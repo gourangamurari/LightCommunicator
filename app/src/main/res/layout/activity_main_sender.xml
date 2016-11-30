@@ -51,7 +51,7 @@
         android:layout_below="@+id/stringtype"
         android:layout_alignEnd="@+id/stringtype"
         android:layout_alignStart="@+id/stringtype"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="normal|bold"
         android:textColor="?attr/textColorSearchUrl"
         android:textAlignment="center"
@@ -101,8 +101,10 @@
         android:background="?attr/colorPrimaryDark"
         android:textAlignment="center"
         android:textColorHighlight="@android:color/holo_green_dark"
-        android:layout_alignParentStart="true"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

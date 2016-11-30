@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="4"
+android:padding="5dp"
+android:background="@color/colorback"> <!-- to show what the parent is -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="LIGHT COMMUNICATOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proximitytextView1"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="normal|bold"
+            android:background="?attr/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textColorHighlight="@android:color/holo_green_dark"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="SENDER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSender"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:elevation="15dp"
+            android:textColorHighlight="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="358dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="SENDER uses your mobile's flashlight sensor to send data"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="RECEIVER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonReceiver"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:elevation="15dp"
+            android:textColorHighlight="@android:color/holo_green_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:layout_weight="0.28">
+
+        <TextView
+            android:text="Receiver uses your mobile's proximity sensor to receive data"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_weight="0.70" />
+    </LinearLayout>
+
+</LinearLayout>
